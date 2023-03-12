@@ -12,6 +12,21 @@
 #include <xc.h>
 #define _XTAL_FREQ 4000000
 
+void servo(int pos){
+    if(pos == 100){
+        PORTB |= 0x02;
+        __delay_ms(1.5);
+        PORTB &= ~0x02;
+        __delay_ms(18.5);
+    }
+    if(pos == 10){
+        PORTB |= 0x02;
+        __delay_ms(0.75);
+        PORTB &= ~0x02;
+        __delay_ms(19.25);
+    }
+    return;
+}
 
 void main(void)
 {
@@ -27,9 +42,9 @@ void main(void)
   //DDRD = 0xFF;
   PORTC = 0x00;
   PORTE = 0x00;
-  //PORTB = 0x00;
+  //PORTB = 0x02;//RB1 IS PWM SIGNAL FOR SERVO MOTOR
   //PORTA = 0x00;
-  PORTD = 0x20;//RB5 is DIR PIN FOR MOTOR 2, 0 is CW 1 is CCW RB7 is DIR PIN M1
+  PORTD = 0x20;//RD5 is DIR PIN FOR MOTOR 2, 0 is CW 1 is CCW RB7 is DIR PIN M1
   // Create The System's Main Routine !
   while(1)
   {
