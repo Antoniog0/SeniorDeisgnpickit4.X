@@ -33,14 +33,18 @@
 [v _PORTC PORTC `VEuc  1 e 1 @3970 ]
 "6576
 [v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"6747
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
 "7913
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
 "7970
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"8032
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
 "13 C:\Users\fredn\MPLABXProjects\SeniorDeisgnpickit4.X\newmain.c
 [v _main main `(v  1 e 1 0 ]
 {
-"31
-[v main@i i `i  1 a 2 1 ]
-"84
+"33
+[v main@i i `i  1 a 2 0 ]
+"88
 } 0

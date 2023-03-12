@@ -10165,33 +10165,37 @@ void main(void)
 
   TRISC = 0x00;
 
+  TRISE = 0x00;
   TRISD = 0x00;
 
 
 
   PORTC = 0x00;
+  PORTE = 0x00;
 
 
-  PORTD = 0x00;
+  PORTD = 0x80;
 
   while(1)
   {
       for(int i = 0; i < 200;i++){
 
-          PORTC |= 0x02;
 
 
-          PORTD |= 0xFF;
-          _delay((unsigned long)((5)*(4000000/4000.0)));
-
-          PORTC &= ~0x02;
 
 
-          PORTD &= ~0xFF;
-          _delay((unsigned long)((5)*(4000000/4000.0)));
+          PORTD |= 0x5F;
+          _delay((unsigned long)((1)*(4000000/4000.0)));
+
+
+
+
+
+          PORTD &= ~0x5F;
+          _delay((unsigned long)((1)*(4000000/4000.0)));
 
       }
-# 82 "newmain.c"
+# 86 "newmain.c"
   }
   return;
 }

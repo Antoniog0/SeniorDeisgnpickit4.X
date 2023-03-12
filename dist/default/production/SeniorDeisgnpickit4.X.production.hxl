@@ -10,9 +10,9 @@
 ### Memory Usage ###
  Intel Hex-file ranges:
   0h - 3h		(dist/default/production\SeniorDeisgnpickit4.X.production.hex)
-  FF88h - FFFFh		(dist/default/production\SeniorDeisgnpickit4.X.production.hex)
+  FF92h - FFFFh		(dist/default/production\SeniorDeisgnpickit4.X.production.hex)
  Unused ranges:
-  4h - FF87h
+  4h - FF91h
 
 ### Hex Memory Map ###
  Legend:
@@ -23,8 +23,7 @@
 ----------------------------------------------------------
 00000000 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
-0000FF80 | -- -- -- -- -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1
-0000FF90 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+0000FF90 | -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 0000FFA0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 0000FFB0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 0000FFC0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

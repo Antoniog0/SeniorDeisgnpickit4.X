@@ -3,12 +3,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7913 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\pic\include\proc\pic18f46j50.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\pic\include\proc\pic18f46j50.h: 7913: extern volatile unsigned char TRISC __attribute__((address(0xF94)));
 [v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
+"8032
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\pic\include\proc\pic18f46j50.h: 8032: extern volatile unsigned char TRISE __attribute__((address(0xF96)));
+[v _TRISE `Vuc ~T0 @X0 0 e@3990 ]
 "7970
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\pic\include\proc\pic18f46j50.h: 7970: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
 [v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
 "6339
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\pic\include\proc\pic18f46j50.h: 6339: extern volatile unsigned char PORTC __attribute__((address(0xF82)));
 [v _PORTC `Vuc ~T0 @X0 0 e@3970 ]
+"6747
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\pic\include\proc\pic18f46j50.h: 6747: extern volatile unsigned char PORTE __attribute__((address(0xF84)));
+[v _PORTE `Vuc ~T0 @X0 0 e@3972 ]
 "6576
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\pic\include\proc\pic18f46j50.h: 6576: extern volatile unsigned char PORTD __attribute__((address(0xF83)));
 [v _PORTD `Vuc ~T0 @X0 0 e@3971 ]
@@ -930,22 +936,28 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;newmain.c: 18:   TRISC = 0x00;
 [e = _TRISC -> -> 0 `i `uc ]
 "20
-[; ;newmain.c: 20:   TRISD = 0x00;
+[; ;newmain.c: 20:   TRISE = 0x00;
+[e = _TRISE -> -> 0 `i `uc ]
+"21
+[; ;newmain.c: 21:   TRISD = 0x00;
 [e = _TRISD -> -> 0 `i `uc ]
-"24
-[; ;newmain.c: 24:   PORTC = 0x00;
+"25
+[; ;newmain.c: 25:   PORTC = 0x00;
 [e = _PORTC -> -> 0 `i `uc ]
-"27
-[; ;newmain.c: 27:   PORTD = 0x00;
-[e = _PORTD -> -> 0 `i `uc ]
+"26
+[; ;newmain.c: 26:   PORTE = 0x00;
+[e = _PORTE -> -> 0 `i `uc ]
 "29
-[; ;newmain.c: 29:   while(1)
-[e :U 774 ]
-"30
-[; ;newmain.c: 30:   {
-{
+[; ;newmain.c: 29:   PORTD = 0x80;
+[e = _PORTD -> -> 128 `i `uc ]
 "31
-[; ;newmain.c: 31:       for(int i = 0; i < 200;i++){
+[; ;newmain.c: 31:   while(1)
+[e :U 774 ]
+"32
+[; ;newmain.c: 32:   {
+{
+"33
+[; ;newmain.c: 33:       for(int i = 0; i < 200;i++){
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
@@ -953,41 +965,35 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 777  ]
 [e :U 776 ]
 {
-"33
-[; ;newmain.c: 33:           PORTC |= 0x02;
-[e =| _PORTC -> -> 2 `i `Vuc ]
-"36
-[; ;newmain.c: 36:           PORTD |= 0xFF;
-[e =| _PORTD -> -> 255 `i `Vuc ]
-"37
-[; ;newmain.c: 37:           _delay((unsigned long)((5)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "39
-[; ;newmain.c: 39:           PORTC &= ~0x02;
-[e =& _PORTC -> ~ -> 2 `i `Vuc ]
-"42
-[; ;newmain.c: 42:           PORTD &= ~0xFF;
-[e =& _PORTD -> ~ -> 255 `i `Vuc ]
-"43
-[; ;newmain.c: 43:           _delay((unsigned long)((5)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"45
-[; ;newmain.c: 45:       }
+[; ;newmain.c: 39:           PORTD |= 0x5F;
+[e =| _PORTD -> -> 95 `i `Vuc ]
+"40
+[; ;newmain.c: 40:           _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"46
+[; ;newmain.c: 46:           PORTD &= ~0x5F;
+[e =& _PORTD -> ~ -> 95 `i `Vuc ]
+"47
+[; ;newmain.c: 47:           _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"49
+[; ;newmain.c: 49:       }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 200 `i 776  ]
 [e :U 777 ]
 }
-"82
-[; ;newmain.c: 82:   }
+"86
+[; ;newmain.c: 86:   }
 }
 [e :U 773 ]
 [e $U 774  ]
 [e :U 775 ]
-"83
-[; ;newmain.c: 83:   return;
+"87
+[; ;newmain.c: 87:   return;
 [e $UE 772  ]
-"84
-[; ;newmain.c: 84: }
+"88
+[; ;newmain.c: 88: }
 [e :UE 772 ]
 }

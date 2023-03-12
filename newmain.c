@@ -16,31 +16,35 @@ void main(void)
   //unsigned int i=0;
   // Set PORT 8-Pins To Be Output Pins
   TRISC = 0x00;
-  //TRISB = 0xFF;
+  //TRISB = 0x00;
+  TRISE = 0x00;
   TRISD = 0x00;//changed motor 2 when set to inputs
-  //TRISA = 0xFF;
+  //TRISA = 0x00;
   // Set All PORT Pins To Be OFF (Initially) !
   //DDRD = 0xFF;
   PORTC = 0x00;
-  //PORTB = 0xFF;
-  //PORTA = 0xFF;
-  PORTD = 0x00;
+  PORTE = 0x00;
+  //PORTB = 0x00;
+  //PORTA = 0x00;
+  PORTD = 0x80;//RB5 is DIR PIN FOR MOTOR 2, 0 is CW 1 is CCW
   // Create The System's Main Routine !
   while(1)
   {
       for(int i = 0; i < 200;i++){
           //PORTC |= 0xFD;//0x02 might be dir pin
-          PORTC |= 0x02;
-          /*PORTA |= 0xFF;
-          PORTB |= 0xFF;*/
-          PORTD |= 0xFF;
-          __delay_ms(5);
+          //PORTC |= 0x00;
+          //PORTE |= 0x02;//RE1 IS STEP PIN FOR MOTOR 1
+          //PORTA |= 0xFF;
+          //PORTB |= 0xFF;
+          PORTD |= 0x5F;//RD4 IS STEP PIN FOR MOTOR 2
+          __delay_ms(1);
           //PORTC &= ~0xFD;
-          PORTC &= ~0x02;
-          /*PORTA |= ~0xFF;
-          PORTB |= ~0xFF;*/
-          PORTD &= ~0xFF;
-          __delay_ms(5);
+          //PORTC &= ~0x02;
+          //PORTE &= ~0x02;
+          //PORTA &= ~0xFF;
+          //PORTB &= ~0xFF;
+          PORTD &= ~0x5F;
+          __delay_ms(1);
           
       }
       /*PORTC = 0x00;
