@@ -1,9 +1,9 @@
 __S0 FFF8 0 ABS 0
-__S1 3 0 ABS 0
+__S1 6 0 ABS 0
 __S4 0 0 ABS 0
 __Hintentry 0 0 ABS 0
 __Lintentry 0 0 ABS 0
-_main FF98 0 CODE 0
+_main FF40 0 CODE 0
 ___sp 0 0 STACK 2
 start 0 0 CODE 0
 _TRISC F94 0 ABS 0
@@ -18,7 +18,7 @@ __LRAM 1 0 ABS 0
 _PORTE F84 0 ABS 0
 __Hconfig 10000 0 CONFIG 4
 __Lconfig 0 0 CONFIG 4
-main@i 1 0 COMRAM 1
+main@i 2 0 COMRAM 1
 __Hbigram 0 0 ABS 0
 __Lbigram 0 0 ABS 0
 __Hrparam 0 0 COMRAM 1
@@ -83,7 +83,7 @@ __Lrbss 0 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 ___heap_lo 0 0 ABS 0
-end_of_initialization FF92 0 CODE 0
+end_of_initialization FF3A 0 CODE 0
 __Hibigdata 0 0 CODE 0
 __Libigdata 0 0 CODE 0
 __Hifardata 0 0 CODE 0
@@ -112,10 +112,10 @@ __Htext0 0 0 ABS 0
 __Ltext0 0 0 ABS 0
 __Hbank9 0 0 ABS 0
 __Lbank9 0 0 ABS 0
-__ptext0 FF98 0 CODE 0
+__ptext0 FF40 0 CODE 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
-__end_of__initialization FF92 0 CODE 0
+__end_of__initialization FF3A 0 CODE 0
 ___rparam_used 1 0 ABS 0
 __Hidata 0 0 CODE 0
 __Lidata 0 0 CODE 0
@@ -132,7 +132,7 @@ __HcstackCOMRAM 0 0 ABS 0
 __Lspace_0 0 0 ABS 0
 __LcstackCOMRAM 0 0 ABS 0
 __pcstackCOMRAM 1 0 COMRAM 1
-__Hspace_1 3 0 ABS 0
+__Hspace_1 6 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __Hsmallconst 0 0 SMALLCONST 0
 __Lsmallconst 0 0 SMALLCONST 0
@@ -142,13 +142,14 @@ __Hnvbit 0 0 COMRAM 1
 __Lnvbit 0 0 COMRAM 1
 __Hcinit 0 0 ABS 0
 __Lcinit 0 0 ABS 0
-__pcinit FF92 0 CODE 0
+__pcinit FF3A 0 CODE 0
 __ramtop 1000 0 RAM 0
 __mediumconst 0 0 MEDIUMCONST 0
 __Hconst 0 0 CONST 0
 __Lconst 0 0 CONST 0
 __Hspace_4 1FFF8 0 ABS 0
 __Lspace_4 0 0 ABS 0
+main@i_42 4 0 COMRAM 1
 __Hbank10 0 0 ABS 0
 __Lbank10 0 0 ABS 0
 __Hbank11 0 0 ABS 0
@@ -173,36 +174,44 @@ intlevel0 0 0 CODE 0
 intlevel1 0 0 CODE 0
 intlevel2 0 0 CODE 0
 intlevel3 0 0 CODE 0
-start_initialization FF92 0 CODE 0
-__initialization FF92 0 CODE 0
+start_initialization FF3A 0 CODE 0
+__initialization FF3A 0 CODE 0
 __activetblptr 0 0 ABS 0
 %segments
 reset_vec 0 3 CODE 0 0
-cstackCOMRAM 1 2 COMRAM 1 1
-text0 FF98 FFF7 CODE FF98 0
-cinit FF92 FF97 CODE FF92 0
+cstackCOMRAM 1 5 COMRAM 1 1
+text0 FF40 FFF7 CODE FF40 0
+cinit FF3A FF3F CODE FF3A 0
 %locals
 dist/default/production\SeniorDeisgnpickit4.X.production.o
 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\pic\include\proc\pic18f46j50.h
-C:\Users\fredn\AppData\Local\Temp\xcAsf44.s
-725 FF92 0 CODE 0
-727 FF92 0 CODE 0
-730 FF92 0 CODE 0
-736 FF92 0 CODE 0
-738 FF92 0 CODE 0
-739 FF94 0 CODE 0
+C:\Users\fredn\AppData\Local\Temp\xcAsmss.s
+725 FF3A 0 CODE 0
+727 FF3A 0 CODE 0
+730 FF3A 0 CODE 0
+736 FF3A 0 CODE 0
+738 FF3A 0 CODE 0
+739 FF3C 0 CODE 0
 newmain.c
-13 FF98 0 CODE 0
-18 FF98 0 CODE 0
-20 FF9C 0 CODE 0
-21 FFA0 0 CODE 0
-25 FFA4 0 CODE 0
-26 FFA8 0 CODE 0
-29 FFAC 0 CODE 0
-31 FFB0 0 CODE 0
-33 FFB0 0 CODE 0
-39 FFB8 0 CODE 0
-40 FFBC 0 CODE 0
-46 FFC4 0 CODE 0
-47 FFC8 0 CODE 0
-49 FFD0 0 CODE 0
+16 FF40 0 CODE 0
+21 FF40 0 CODE 0
+23 FF44 0 CODE 0
+24 FF48 0 CODE 0
+28 FF4C 0 CODE 0
+29 FF50 0 CODE 0
+32 FF54 0 CODE 0
+34 FF58 0 CODE 0
+36 FF58 0 CODE 0
+37 FF5C 0 CODE 0
+43 FF64 0 CODE 0
+44 FF68 0 CODE 0
+50 FF78 0 CODE 0
+51 FF7C 0 CODE 0
+52 FF84 0 CODE 0
+53 FFA4 0 CODE 0
+55 FFA8 0 CODE 0
+61 FFB0 0 CODE 0
+62 FFB4 0 CODE 0
+68 FFC4 0 CODE 0
+69 FFC8 0 CODE 0
+70 FFD0 0 CODE 0

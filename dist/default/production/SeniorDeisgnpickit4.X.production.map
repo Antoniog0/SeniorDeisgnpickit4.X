@@ -6,10 +6,10 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v2.40\pic\dat\20220703182018_en.msgs \
   -cn -h+dist/default/production\SeniorDeisgnpickit4.X.production.sym \
   --cmf=dist/default/production\SeniorDeisgnpickit4.X.production.cmf -z \
-  -Q18F46J50 -oC:\Users\fredn\AppData\Local\Temp\xcAsf44.4 \
+  -Q18F46J50 -oC:\Users\fredn\AppData\Local\Temp\xcAsmss.4 \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/SeniorDeisgnpickit4.X.production.map \
-  --md=C:\Users\fredn\AppData\Local\Temp\xcAsf44.dat -E1 -ver=XC8 Compiler \
+  --md=C:\Users\fredn\AppData\Local\Temp\xcAsmss.dat -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ACODE=00h-0FFF7h -ACONST=00h-0FFF7h \
   -ASMALLCONST=01000h-010FFhx239,0FF00h-0FFF7h -AMEDIUMCONST=01000h-0FFF7h \
   -ACOMRAM=01h-05Fh -AABS1=00h-0EBFh -ABIGRAM=01h-0EBFh \
@@ -27,7 +27,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\fredn\AppData\Local\Temp\xcAsf44.o \
+  C:\Users\fredn\AppData\Local\Temp\xcAsmss.o \
   dist/default/production\SeniorDeisgnpickit4.X.production.o 
 
 Object code version is 3.11
@@ -37,20 +37,20 @@ Machine type is 18F46J50
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\fredn\AppData\Local\Temp\xcAsf44.o
+C:\Users\fredn\AppData\Local\Temp\xcAsmss.o
                 config                             FFF8     FFF8        8        0       4
                 init                                  0        0        4        0       0
 dist/default/production\SeniorDeisgnpickit4.X.production.o
                 config                             FFF8     FFF8        8        0       4
-                text0                              FF98     FF98       60     7FCC       0
-                cstackCOMRAM                          1        1        2        1       1
-                cinit                              FF92     FF92        6     7FC9       0
+                text0                              FF40     FF40       B8     7FA0       0
+                cstackCOMRAM                          1        1        5        1       1
+                cinit                              FF3A     FF3A        6     7F9D       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
                 init                                  0        0        4         0
-                text0                              FF98     FF98       60         0
-                cinit                              FF92     FF92        6         0
+                text0                              FF40     FF40       B8         0
+                cinit                              FF3A     FF3A        6         0
 
         CLASS   CONST          
 
@@ -59,7 +59,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   MEDIUMCONST    
 
         CLASS   COMRAM         
-                cstackCOMRAM                          1        1        2         1
+                cstackCOMRAM                          1        1        5         1
 
         CLASS   ABS1           
 
@@ -117,9 +117,9 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
-                cstackCOMRAM                   000001  000002  000003         1       1  COMRAM  
-                cinit                          00FF92  000006  00FF98      7FC9       0  CODE    
-                text0                          00FF98  000060  00FFF8      7FCC       0  CODE    
+                cstackCOMRAM                   000001  000005  000006         1       1  COMRAM  
+                cinit                          00FF3A  000006  00FF40      7F9D       0  CODE    
+                text0                          00FF40  0000B8  00FFF8      7FA0       0  CODE    
 
 
 UNUSED ADDRESS RANGES
@@ -140,15 +140,15 @@ UNUSED ADDRESS RANGES
         BANK7            00700-007FF             100
         BANK8            00800-008FF             100
         BANK9            00900-009FF             100
-        BIGRAM           00003-00EBF             EBD
+        BIGRAM           00006-00EBF             EBA
         BIGSFR           00EC0-00FFF             140
-        CODE             00004-0FF91            FF8E
-        COMRAM           00003-0005F              5D
-        CONST            00004-0FF91            FF8E
-        MEDIUMCONST      01000-0FF91            EF92
+        CODE             00004-0FF39            FF36
+        COMRAM           00006-0005F              5A
+        CONST            00004-0FF39            FF36
+        MEDIUMCONST      01000-0FF39            EF3A
         RAM              00060-00EBF             100
         SFR              00EC0-00FFF              60
-        SMALLCONST       01000-0FF91             100
+        SMALLCONST       01000-0FF39             100
 
                                   Symbol Table
 
@@ -219,7 +219,7 @@ __Hrparam                rparam        00000
 __Hsfr                   sfr           00000
 __Hsmallconst            smallconst    00000
 __Hspace_0               (abs)         0FFF8
-__Hspace_1               (abs)         00003
+__Hspace_1               (abs)         00006
 __Hspace_2               (abs)         00000
 __Hspace_4               (abs)         1FFF8
 __Hstack                 stack         00000
@@ -297,7 +297,7 @@ __Ltemp                  temp          00000
 __Ltext                  text          00000
 __Ltext0                 text0         00000
 __S0                     (abs)         0FFF8
-__S1                     (abs)         00003
+__S1                     (abs)         00006
 __S4                     (abs)         00000
 ___heap_hi               (abs)         00000
 ___heap_lo               (abs)         00000
@@ -308,40 +308,41 @@ ___rparam_used           (abs)         00001
 ___sp                    stack         00000
 __accesstop              (abs)         00060
 __activetblptr           (abs)         00000
-__end_of__initialization cinit         0FF92
+__end_of__initialization cinit         0FF3A
 __end_of_main            text0         0FFF8
-__initialization         cinit         0FF92
+__initialization         cinit         0FF3A
 __mediumconst            mediumconst   00000
-__pcinit                 cinit         0FF92
+__pcinit                 cinit         0FF3A
 __pcstackCOMRAM          cstackCOMRAM  00001
-__ptext0                 text0         0FF98
+__ptext0                 text0         0FF40
 __ramtop                 ramtop        01000
 __smallconst             smallconst    00000
-_main                    text0         0FF98
-end_of_initialization    cinit         0FF92
+_main                    text0         0FF40
+end_of_initialization    cinit         0FF3A
 intlevel0                text          00000
 intlevel1                text          00000
 intlevel2                text          00000
 intlevel3                text          00000
 isa$std                  (abs)         00001
 isa$xinst                (abs)         00000
-main@i                   cstackCOMRAM  00001
+main@i                   cstackCOMRAM  00002
+main@i_42                cstackCOMRAM  00004
 stackhi                  (abs)         00000
 stacklo                  (abs)         00000
 start                    init          00000
-start_initialization     cinit         0FF92
+start_initialization     cinit         0FF3A
 
 
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 newmain.c
-		_main          		CODE           	FF98	0000	96
+		_main          		CODE           	FF40	0000	184
 
-newmain.c estimated size: 96
+newmain.c estimated size: 184
 
 shared
-		__initialization		CODE           	FF92	0000	1
+		__initialization		CODE           	FF3A	0000	1
 
 shared estimated size: 1
 

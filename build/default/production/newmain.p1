@@ -924,76 +924,110 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\pic\include\proc\pic18f46j50.h: 16435: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"13 newmain.c
-[; ;newmain.c: 13: void main(void)
+"16 newmain.c
+[; ;newmain.c: 16: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"14
-[; ;newmain.c: 14: {
+"17
+[; ;newmain.c: 17: {
 {
 [e :U _main ]
 [f ]
-"18
-[; ;newmain.c: 18:   TRISC = 0x00;
-[e = _TRISC -> -> 0 `i `uc ]
-"20
-[; ;newmain.c: 20:   TRISE = 0x00;
-[e = _TRISE -> -> 0 `i `uc ]
 "21
-[; ;newmain.c: 21:   TRISD = 0x00;
+[; ;newmain.c: 21:   TRISC = 0x00;
+[e = _TRISC -> -> 0 `i `uc ]
+"23
+[; ;newmain.c: 23:   TRISE = 0x00;
+[e = _TRISE -> -> 0 `i `uc ]
+"24
+[; ;newmain.c: 24:   TRISD = 0x00;
 [e = _TRISD -> -> 0 `i `uc ]
-"25
-[; ;newmain.c: 25:   PORTC = 0x00;
+"28
+[; ;newmain.c: 28:   PORTC = 0x00;
 [e = _PORTC -> -> 0 `i `uc ]
-"26
-[; ;newmain.c: 26:   PORTE = 0x00;
-[e = _PORTE -> -> 0 `i `uc ]
 "29
-[; ;newmain.c: 29:   PORTD = 0x80;
-[e = _PORTD -> -> 128 `i `uc ]
-"31
-[; ;newmain.c: 31:   while(1)
-[e :U 774 ]
+[; ;newmain.c: 29:   PORTE = 0x00;
+[e = _PORTE -> -> 0 `i `uc ]
 "32
-[; ;newmain.c: 32:   {
+[; ;newmain.c: 32:   PORTD = 0x20;
+[e = _PORTD -> -> 32 `i `uc ]
+"34
+[; ;newmain.c: 34:   while(1)
+[e :U 774 ]
+"35
+[; ;newmain.c: 35:   {
 {
-"33
-[; ;newmain.c: 33:       for(int i = 0; i < 200;i++){
+"36
+[; ;newmain.c: 36:       PORTD = 0x20;
+[e = _PORTD -> -> 32 `i `uc ]
+"37
+[; ;newmain.c: 37:       for(int i = 0; i < 100;i++){
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 200 `i 776  ]
+[e $ < _i -> 100 `i 776  ]
 [e $U 777  ]
 [e :U 776 ]
 {
-"39
-[; ;newmain.c: 39:           PORTD |= 0x5F;
+"43
+[; ;newmain.c: 43:           PORTD |= 0x5F;
 [e =| _PORTD -> -> 95 `i `Vuc ]
-"40
-[; ;newmain.c: 40:           _delay((unsigned long)((1)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"46
-[; ;newmain.c: 46:           PORTD &= ~0x5F;
+"44
+[; ;newmain.c: 44:           _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"50
+[; ;newmain.c: 50:           PORTD &= ~0x5F;
 [e =& _PORTD -> ~ -> 95 `i `Vuc ]
-"47
-[; ;newmain.c: 47:           _delay((unsigned long)((1)*(4000000/4000.0)));
+"51
+[; ;newmain.c: 51:           _delay((unsigned long)((1)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"49
-[; ;newmain.c: 49:       }
+"52
+[; ;newmain.c: 52:       }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 200 `i 776  ]
+[e $ < _i -> 100 `i 776  ]
 [e :U 777 ]
 }
-"86
-[; ;newmain.c: 86:   }
+"53
+[; ;newmain.c: 53:       PORTD = 0x80;
+[e = _PORTD -> -> 128 `i `uc ]
+"55
+[; ;newmain.c: 55:       for(int i = 0; i < 100;i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 100 `i 779  ]
+[e $U 780  ]
+[e :U 779 ]
+{
+"61
+[; ;newmain.c: 61:           PORTD |= 0x5F;
+[e =| _PORTD -> -> 95 `i `Vuc ]
+"62
+[; ;newmain.c: 62:           _delay((unsigned long)((4)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 4 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"68
+[; ;newmain.c: 68:           PORTD &= ~0x5F;
+[e =& _PORTD -> ~ -> 95 `i `Vuc ]
+"69
+[; ;newmain.c: 69:           _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"70
+[; ;newmain.c: 70:       }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 100 `i 779  ]
+[e :U 780 ]
+}
+"107
+[; ;newmain.c: 107:   }
 }
 [e :U 773 ]
 [e $U 774  ]
 [e :U 775 ]
-"87
-[; ;newmain.c: 87:   return;
+"108
+[; ;newmain.c: 108:   return;
 [e $UE 772  ]
-"88
-[; ;newmain.c: 88: }
+"109
+[; ;newmain.c: 109: }
 [e :UE 772 ]
 }

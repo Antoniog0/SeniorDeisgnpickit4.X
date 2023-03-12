@@ -7,13 +7,7 @@
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "newmain.c" 2
-
-
-
-
-
-
-
+# 11 "newmain.c"
 # 1 "./pins_header.h" 1
 
 
@@ -10152,7 +10146,7 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\\pic\\include\\xc.h" 2 3
 # 45 "./pins_header.h" 2
-# 8 "newmain.c" 2
+# 11 "newmain.c" 2
 
 
 
@@ -10174,18 +10168,19 @@ void main(void)
   PORTE = 0x00;
 
 
-  PORTD = 0x80;
+  PORTD = 0x20;
 
   while(1)
   {
-      for(int i = 0; i < 200;i++){
+      PORTD = 0x20;
+      for(int i = 0; i < 100;i++){
 
 
 
 
 
           PORTD |= 0x5F;
-          _delay((unsigned long)((1)*(4000000/4000.0)));
+          _delay((unsigned long)((4)*(4000000/4000.0)));
 
 
 
@@ -10193,9 +10188,26 @@ void main(void)
 
           PORTD &= ~0x5F;
           _delay((unsigned long)((1)*(4000000/4000.0)));
-
       }
-# 86 "newmain.c"
+      PORTD = 0x80;
+
+      for(int i = 0; i < 100;i++){
+
+
+
+
+
+          PORTD |= 0x5F;
+          _delay((unsigned long)((4)*(4000000/4000.0)));
+
+
+
+
+
+          PORTD &= ~0x5F;
+          _delay((unsigned long)((1)*(4000000/4000.0)));
+      }
+# 107 "newmain.c"
   }
   return;
 }
