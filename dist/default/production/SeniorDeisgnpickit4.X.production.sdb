@@ -3,12 +3,22 @@
 [d edition pro ]
 [d chip 18F46J50 ]
 [d frameptr 4065 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\__fpclassifyf.c
+[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fmodf.c
+[v _fmodf fmodf `(f  1 e 4 0 ]
 "86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
 "54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
@@ -31,17 +41,21 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"23 C:\Users\fredn\MPLABXProjects\SeniorDeisgnpickit4.X\newmain.c
+"27 C:\Users\fredn\MPLABXProjects\SeniorDeisgnpickit4.X\newmain.c
+[v _mmaxisconversion mmaxisconversion `(d  1 e 4 0 ]
+"61
 [v _servo servo `(v  1 e 1 0 ]
-"42
+"125
 [v _moveright moveright `(v  1 e 1 0 ]
-"55
+"138
 [v _moveleft moveleft `(v  1 e 1 0 ]
-"66
+"149
 [v _movedown movedown `(v  1 e 1 0 ]
-"77
+"160
 [v _moveup moveup `(v  1 e 1 0 ]
-"170
+"191
+[v _position position `(v  1 e 1 0 ]
+"442
 [v _main main `(v  1 e 1 0 ]
 "6049 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\pic\include\proc\pic18f46j50.h
 [v _PORTB PORTB `VEuc  1 e 1 @3969 ]
@@ -59,53 +73,275 @@
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "8032
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
-"170 C:\Users\fredn\MPLABXProjects\SeniorDeisgnpickit4.X\newmain.c
+"23 C:\Users\fredn\MPLABXProjects\SeniorDeisgnpickit4.X\newmain.c
+[v _currposx currposx `d  1 e 4 0 ]
+"24
+[v _currposy currposy `d  1 e 4 0 ]
+"442
 [v _main main `(v  1 e 1 0 ]
 {
-"339
+"538
+[v main@gcode gcode `[230]uc  1 a 230 0 ]
+"542
+[v main@size size `i  1 a 2 230 ]
+"468
+[v main@F6349 F6349 `[230]uc  1 s 230 F6349 ]
+"625
 } 0
-"23
+"191
+[v _position position `(v  1 e 1 0 ]
+{
+"268
+[v position@p_110 p `i  1 a 2 15 ]
+"259
+[v position@p p `i  1 a 2 13 ]
+"300
+[v position@holds holds `d  1 a 4 43 ]
+"208
+[v position@o o `i  1 a 2 63 ]
+"201
+[v position@decimal decimal `d  1 a 4 59 ]
+"200
+[v position@decimaly decimaly `d  1 a 4 55 ]
+"199
+[v position@decimaleqy decimaleqy `d  1 a 4 51 ]
+"198
+[v position@decimaleq decimaleq `d  1 a 4 47 ]
+"197
+[v position@remainder remainder `d  1 a 4 39 ]
+"194
+[v position@posholdery posholdery `d  1 a 4 35 ]
+"193
+[v position@posholderx posholderx `d  1 a 4 31 ]
+"206
+[v position@j j `d  1 a 4 7 ]
+"196
+[v position@positive positive `d  1 a 4 3 ]
+"204
+[v position@ycheck ycheck `i  1 a 2 29 ]
+"203
+[v position@xcheck xcheck `i  1 a 2 27 ]
+"205
+[v position@zcheck zcheck `i  1 a 2 25 ]
+"195
+[v position@exp exp `i  1 a 2 23 ]
+"202
+[v position@decimalcheck decimalcheck `i  1 a 2 21 ]
+"207
+[v position@t t `i  1 a 2 11 ]
+"191
+[v position@arrayinput arrayinput `*.39uc  1 p 2 90 ]
+[v position@arraysize arraysize `i  1 p 2 92 ]
+"440
+} 0
+"61
 [v _servo servo `(v  1 e 1 0 ]
 {
-"25
+"63
 [v servo@i i `i  1 a 2 3 ]
-"23
+"61
 [v servo@pos pos `i  1 p 2 0 ]
-"40
+"78
 } 0
-"77
+"160
 [v _moveup moveup `(v  1 e 1 0 ]
 {
-"79
-[v moveup@i i `i  1 a 2 3 ]
-"77
-[v moveup@steps steps `i  1 p 2 0 ]
-"86
+"162
+[v moveup@i i `i  1 a 2 71 ]
+"160
+[v moveup@steps steps `d  1 p 4 66 ]
+"169
 } 0
-"42
+"125
 [v _moveright moveright `(v  1 e 1 0 ]
 {
-"46
-[v moveright@i i `i  1 a 2 3 ]
-"42
-[v moveright@steps steps `i  1 p 2 0 ]
-"53
+"129
+[v moveright@i i `i  1 a 2 71 ]
+"125
+[v moveright@steps steps `d  1 p 4 66 ]
+"136
 } 0
-"55
+"138
 [v _moveleft moveleft `(v  1 e 1 0 ]
 {
-"57
-[v moveleft@i i `i  1 a 2 3 ]
-"55
-[v moveleft@steps steps `i  1 p 2 0 ]
-"64
+"140
+[v moveleft@i i `i  1 a 2 71 ]
+"138
+[v moveleft@steps steps `d  1 p 4 66 ]
+"147
 } 0
-"66
+"149
 [v _movedown movedown `(v  1 e 1 0 ]
 {
-"68
-[v movedown@i i `i  1 a 2 3 ]
-"66
-[v movedown@steps steps `i  1 p 2 0 ]
-"75
+"151
+[v movedown@i i `i  1 a 2 71 ]
+"149
+[v movedown@steps steps `d  1 p 4 66 ]
+"158
+} 0
+"27
+[v _mmaxisconversion mmaxisconversion `(d  1 e 4 0 ]
+{
+"30
+[v mmaxisconversion@remainder remainder `d  1 a 4 62 ]
+"28
+[v mmaxisconversion@p p `d  1 a 4 58 ]
+"29
+[v mmaxisconversion@out out `d  1 a 4 54 ]
+"27
+[v mmaxisconversion@inp inp `d  1 p 4 50 ]
+"42
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 24 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 23 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 14 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 22 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 0 ]
+"70
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 28 ]
+[v ___flge@ff2 ff2 `d  1 p 4 32 ]
+"19
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+{
+[v ___fleq@ff1 ff1 `d  1 p 4 0 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 4 ]
+"12
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fmodf.c
+[v _fmodf fmodf `(f  1 e 4 0 ]
+{
+"11
+[v fmodf@uxi uxi `ul  1 a 4 86 ]
+"10
+[v fmodf@i i `ul  1 a 4 82 ]
+[u S565 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v fmodf@uy uy `S565  1 a 4 78 ]
+[v fmodf@ux ux `S565  1 a 4 72 ]
+"9
+[v fmodf@sx sx `ul  1 a 4 66 ]
+"7
+[v fmodf@ex ex `i  1 a 2 76 ]
+"8
+[v fmodf@ey ey `i  1 a 2 70 ]
+"4
+[v fmodf@x x `f  1 p 4 50 ]
+[v fmodf@y y `f  1 p 4 54 ]
+"5
+[v fmodf@F466 F466 `S565  1 s 4 F466 ]
+"6
+[v fmodf@F468 F468 `S565  1 s 4 F468 ]
+"65
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\__fpclassifyf.c
+[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+{
+[u S565 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v ___fpclassifyf@u u `S565  1 a 4 10 ]
+"7
+[v ___fpclassifyf@e e `i  1 a 2 8 ]
+"4
+[v ___fpclassifyf@x x `f  1 p 4 0 ]
+"5
+[v ___fpclassifyf@F465 F465 `S565  1 s 4 F465 ]
+"11
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S428 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S433 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S436 . 4 `l 1 i 4 0 `d 1 f 4 0 `S428 1 fAsBytes 4 0 `S433 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S436  1 a 4 19 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 13 ]
+[s S504 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S507 . 2 `s 1 i 2 0 `us 1 n 2 0 `S504 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S507  1 a 2 23 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 18 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 17 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 12 ]
+"8
+[v ___flmul@b b `d  1 p 4 0 ]
+[v ___flmul@a a `d  1 p 4 4 ]
+"205
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 44 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 37 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 42 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 49 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 48 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 41 ]
+"11
+[v ___fldiv@b b `d  1 p 4 25 ]
+[v ___fldiv@a a `d  1 p 4 29 ]
+"185
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 10 ]
+"4
+} 0
+"245 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@b b `d  1 p 4 16 ]
+[v ___flsub@a a `d  1 p 4 20 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 15 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 14 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 13 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 12 ]
+"10
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
+"237
 } 0

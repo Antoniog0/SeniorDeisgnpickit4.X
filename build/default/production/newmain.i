@@ -7,7 +7,7 @@
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "newmain.c" 2
-# 16 "newmain.c"
+# 18 "newmain.c"
 # 1 "./pins_header.h" 1
 
 
@@ -10146,13 +10146,419 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\\pic\\include\\xc.h" 2 3
 # 45 "./pins_header.h" 2
-# 16 "newmain.c" 2
+# 18 "newmain.c" 2
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\math.h" 1 3
+# 15 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\math.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 33 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef float float_t;
 
 
 
 
-float posx = 0;
-float posy = 0;
+typedef double double_t;
+# 15 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\math.h" 2 3
+# 42 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\math.h" 3
+int __fpclassifyf(float);
+
+
+
+
+
+
+
+int __signbitf(float);
+# 59 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\math.h" 3
+double acos(double);
+float acosf(float);
+long double acosl(long double);
+
+
+
+double acosh(double);
+float acoshf(float);
+long double acoshl(long double);
+
+
+
+double asin(double);
+float asinf(float);
+long double asinl(long double);
+
+
+
+double asinh(double);
+float asinhf(float);
+long double asinhl(long double);
+
+
+
+double atan(double);
+float atanf(float);
+long double atanl(long double);
+
+
+
+double atan2(double, double);
+float atan2f(float, float);
+long double atan2l(long double, long double);
+
+
+
+double atanh(double);
+float atanhf(float);
+long double atanhl(long double);
+
+
+
+double cbrt(double);
+float cbrtf(float);
+long double cbrtl(long double);
+
+
+
+double ceil(double);
+float ceilf(float);
+long double ceill(long double);
+
+
+
+double copysign(double, double);
+float copysignf(float, float);
+long double copysignl(long double, long double);
+
+
+
+double cos(double);
+float cosf(float);
+long double cosl(long double);
+
+
+
+double cosh(double);
+float coshf(float);
+long double coshl(long double);
+
+
+
+double erf(double);
+float erff(float);
+long double erfl(long double);
+
+
+
+double erfc(double);
+float erfcf(float);
+long double erfcl(long double);
+
+
+
+double exp(double);
+float expf(float);
+long double expl(long double);
+
+
+
+double exp2(double);
+float exp2f(float);
+long double exp2l(long double);
+
+
+
+double expm1(double);
+float expm1f(float);
+long double expm1l(long double);
+
+
+
+double fabs(double);
+float fabsf(float);
+long double fabsl(long double);
+
+
+
+double fdim(double, double);
+float fdimf(float, float);
+long double fdiml(long double, long double);
+
+
+
+double floor(double);
+float floorf(float);
+long double floorl(long double);
+
+
+
+double fma(double, double, double);
+float fmaf(float, float, float);
+long double fmal(long double, long double, long double);
+
+
+
+double fmax(double, double);
+float fmaxf(float, float);
+long double fmaxl(long double, long double);
+
+
+
+double fmin(double, double);
+float fminf(float, float);
+long double fminl(long double, long double);
+
+
+
+double fmod(double, double);
+float fmodf(float, float);
+long double fmodl(long double, long double);
+
+
+
+double frexp(double, int *);
+float frexpf(float, int *);
+long double frexpl(long double, int *);
+
+
+
+double hypot(double, double);
+float hypotf(float, float);
+long double hypotl(long double, long double);
+
+
+
+int ilogb(double);
+int ilogbf(float);
+int ilogbl(long double);
+
+
+
+double ldexp(double, int);
+float ldexpf(float, int);
+long double ldexpl(long double, int);
+
+
+
+double lgamma(double);
+float lgammaf(float);
+long double lgammal(long double);
+
+
+
+long long llrint(double);
+long long llrintf(float);
+long long llrintl(long double);
+
+
+
+long long llround(double);
+long long llroundf(float);
+long long llroundl(long double);
+
+
+
+double log(double);
+float logf(float);
+long double logl(long double);
+
+
+
+double log10(double);
+float log10f(float);
+long double log10l(long double);
+
+
+
+double log1p(double);
+float log1pf(float);
+long double log1pl(long double);
+
+
+
+double log2(double);
+float log2f(float);
+long double log2l(long double);
+
+
+
+double logb(double);
+float logbf(float);
+long double logbl(long double);
+
+
+
+long lrint(double);
+long lrintf(float);
+long lrintl(long double);
+
+
+
+long lround(double);
+long lroundf(float);
+long lroundl(long double);
+
+
+
+double modf(double, double *);
+float modff(float, float *);
+long double modfl(long double, long double *);
+
+
+
+double nan(const char *);
+float nanf(const char *);
+long double nanl(const char *);
+
+
+
+double nearbyint(double);
+float nearbyintf(float);
+long double nearbyintl(long double);
+
+
+
+double nextafter(double, double);
+float nextafterf(float, float);
+long double nextafterl(long double, long double);
+
+
+
+double nexttoward(double, long double);
+float nexttowardf(float, long double);
+long double nexttowardl(long double, long double);
+# 323 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\math.h" 3
+double pow(double, double);
+__attribute__((nonreentrant)) float powf(float, float);
+long double powl(long double, long double);
+
+
+
+double remainder(double, double);
+float remainderf(float, float);
+long double remainderl(long double, long double);
+
+
+
+double remquo(double, double, int *);
+float remquof(float, float, int *);
+long double remquol(long double, long double, int *);
+
+
+
+double rint(double);
+float rintf(float);
+long double rintl(long double);
+
+
+
+double round(double);
+float roundf(float);
+long double roundl(long double);
+
+
+
+double scalbln(double, long);
+float scalblnf(float, long);
+long double scalblnl(long double, long);
+
+
+
+double scalbn(double, int);
+float scalbnf(float, int);
+long double scalbnl(long double, int);
+
+
+
+double sin(double);
+float sinf(float);
+long double sinl(long double);
+
+
+
+double sinh(double);
+float sinhf(float);
+long double sinhl(long double);
+
+
+
+double sqrt(double);
+float sqrtf(float);
+long double sqrtl(long double);
+
+
+
+double tan(double);
+float tanf(float);
+long double tanl(long double);
+
+
+
+double tanh(double);
+float tanhf(float);
+long double tanhl(long double);
+
+
+
+double tgamma(double);
+float tgammaf(float);
+long double tgammal(long double);
+
+
+
+double trunc(double);
+float truncf(float);
+long double truncl(long double);
+# 428 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\math.h" 3
+extern int signgam;
+
+double j0(double);
+double j1(double);
+double jn(int, double);
+
+double y0(double);
+double y1(double);
+double yn(int, double);
+# 20 "newmain.c" 2
+
+
+
+double currposx = 0;
+double currposy = 0;
+
+
+double mmaxisconversion(double inp){
+    double p = 0.0;
+    double out = 0;
+    double remainder = 0;
+    p = inp / .16;
+    remainder = inp * 100;
+    remainder = (int)out % 16;
+    if(remainder>=8){
+        out = p + 1;
+    }
+    else if(remainder < 8 && remainder != 0){
+        out = p - 1;
+    }
+    out = p;
+    return out;
+}
+
+double mmangledconversion(double inp){
+    double p = 0.0;
+    double out = 0;
+    double remainder = 0;
+    p = inp / .11;
+    remainder = inp * 100;
+    remainder = (int)out % 11;
+    if(remainder>=8){
+        out = p + 1;
+    }
+    else if(remainder < 8 && remainder != 0){
+        out = p - 1;
+    }
+    out = p;
+    return out;
+}
 
 void servo(int pos){
 
@@ -10173,7 +10579,52 @@ void servo(int pos){
     return;
 }
 
-void moveright(int steps){
+void moveupright(double steps){
+    PORTD = 0x00;
+    for(int i = 0; i < steps; i++){
+        PORTD |= 0x10;
+        _delay((unsigned long)((2)*(4000000/4000.0)));
+        PORTD &= ~0x10;
+        _delay((unsigned long)((1)*(4000000/4000.0)));
+    }
+    return;
+}
+
+void movedownleft(double steps){
+    PORTD = 0x20;
+    for(int i = 0; i < steps; i++){
+        PORTD |= 0x10;
+        _delay((unsigned long)((2)*(4000000/4000.0)));
+        PORTD &= ~0x10;
+        _delay((unsigned long)((1)*(4000000/4000.0)));
+    }
+    return;
+}
+
+void moveupleft(double steps){
+    PORTD = 0x80;
+    for(int i = 0; i < steps; i++){
+        PORTD |= 0x40;
+        _delay((unsigned long)((2)*(4000000/4000.0)));
+        PORTD &= ~0x40;
+        _delay((unsigned long)((1)*(4000000/4000.0)));
+    }
+    return;
+}
+
+void movedownright(double steps){
+    PORTD = 0x00;
+    for(int i = 0; i < steps; i++){
+        PORTD |= 0x40;
+        _delay((unsigned long)((2)*(4000000/4000.0)));
+        PORTD &= ~0x40;
+        _delay((unsigned long)((1)*(4000000/4000.0)));
+    }
+    return;
+}
+
+
+void moveright(double steps){
 
 
     PORTD = 0x00;
@@ -10186,7 +10637,7 @@ void moveright(int steps){
     return;
 }
 
-void moveleft(int steps){
+void moveleft(double steps){
     PORTD = 0xA0;
     for(int i = 0; i < steps; i++){
         PORTD |= 0x50;
@@ -10197,7 +10648,7 @@ void moveleft(int steps){
     return;
 }
 
-void movedown(int steps){
+void movedown(double steps){
     PORTD = 0x20;
     for(int i = 0; i < steps; i++){
         PORTD |= 0x50;
@@ -10208,7 +10659,7 @@ void movedown(int steps){
     return;
 }
 
-void moveup(int steps){
+void moveup(double steps){
     PORTD = 0x80;
     for(int i = 0; i < steps; i++){
         PORTD |= 0x50;
@@ -10218,87 +10669,148 @@ void moveup(int steps){
     }
     return;
 }
-
-void movetoPosition(float inpx, float inpy){
-    float holdx, holdy = 0;
-    holdx = inpx - posx;
-    holdy = inpy - posy;
-    if(holdx > 0){
-
-    }
-    if(holdy > 0){
-
-    }
-    return;
-}
-
-float x, y, z = 0;
-
+# 191 "newmain.c"
 void position(char arrayinput[], int arraysize){
     int i = 0;
-    float posholderx = 0;
-    float posholdery = 0;
+    double posholderx = 0;
+    double posholdery = 0;
     int exp = 1;
-    float decimal = 0;
-    int check = 0;
-    while(i < arraysize){
-        if(arrayinput[i] == 'X'){
-            while(arrayinput[i] != ' '){
-                if(posholderx != 0 && check != 0){
-                    posholderx *= 10;
-                    posholderx += arrayinput[i];
-                }
-                else if(check){
-                    decimal = arrayinput[i] * 10^(-exp);
-                    posholderx += decimal;
-                    exp++;
-                }
-                else if(arrayinput[i] == '.'){
-                    check = 1;
-                }
-                else{
-                    posholderx += arrayinput[i];
-                }
-                i++;
-            }
-            exp = 0;
-            check = 0;
+    double positive = 0;
+    double remainder = 0;
+    double decimaleq = 0;
+    double decimaleqy = 0;
+    double decimaly = 0;
+    double decimal = 0;
+    int decimalcheck = 0;
+    int xcheck = 0;
+    int ycheck = 0;
+    int zcheck = 0;
+    double j = 0;
+    int t = -1;
+    for(int o = 0; o < arraysize; o++){
+        if(arrayinput[o] == 'X'){
+
+            xcheck = 1;
+
         }
-        else if(arrayinput[i] == 'Y'){
-            while(arrayinput[i] != ' '){
-                if(posholdery != 0 && check != 0){
-                    posholdery *= 10;
-                    posholdery += arrayinput[i];
-                }
-                else if(check){
-                    decimal = arrayinput[i] * 10^(-exp);
-                    posholdery += decimal;
-                    exp++;
-                }
-                else if(arrayinput[i] == '.'){
-                    check = 1;
-                }
-                else{
-                    posholdery += arrayinput[i];
-                }
-                i++;
-            }
-            exp = 0;
-            check = 0;
+        else if(arrayinput[o] == 'Y'){
+            ycheck = 1;
+
+
         }
-        else if(arrayinput[i] == 'Z'){
-            while(arrayinput[i] != ' '){
-                if(arrayinput[i] == '2'){
-                    servo(10);
+        else if (arrayinput[o] == 'Z'){
+            zcheck = 1;
+        }
+        else if (arrayinput[o] == '2' && zcheck){
+            servo(10);
+            zcheck = 0;
+        }
+        else if (arrayinput[o] == '3' && zcheck){
+            servo(100);
+            zcheck = 0;
+        }
+        else if(arrayinput[o] == '.'){
+            decimalcheck = 1;
+
+        }
+        else if((arrayinput[o] != ';' && decimalcheck == 0)&& arrayinput[o] != ' '){
+
+
+            if(xcheck){
+                posholderx = arrayinput[o] - '0';
+
+                if(decimaleq > 0){
+                    decimaleq = decimaleq * 10;
                 }
-                else if(arrayinput[i] == '3'){
-                    servo(100);
+                decimaleq += posholderx;
+            }
+            if(ycheck){
+                posholdery = arrayinput[o] - '0';
+
+                if(decimaleqy > 0){
+                    decimaleqy = decimaleqy * 10;
                 }
-                i++;
+                decimaleqy += posholdery;
+            }
+
+        }
+
+        else if((arrayinput[o] != ';' && decimalcheck == 1) && arrayinput[o] != ' '){
+            if(xcheck){
+                posholderx = arrayinput[o] - '0';
+                for(int p = 0; p < exp; p++){
+                    posholderx = posholderx / 10.0;
+                }
+
+                exp++;
+                decimaleq += posholderx;
+            }
+            else if(ycheck){
+                posholdery = arrayinput[o] - '0';
+                for(int p = 0; p < exp; p++){
+                    posholdery = posholdery / 10.0;
+                }
+
+                exp++;
+                decimaleqy += posholdery;
             }
         }
-        i++;
+        else if(arrayinput[o] == ';' || arrayinput[o] == ' '){
+
+            decimalcheck = 0;
+            exp = 1;
+            decimal = decimaleq;
+            decimaly = decimaleqy;
+            decimaleq = 0;
+            decimaleqy = 0;
+
+            remainder = fmodf(decimal,1.0);
+            decimal = decimal - remainder;
+            if(remainder >= 0.5){
+
+                decimal++;
+            }
+            remainder = fmodf(decimaly,1.0);
+            decimaly = decimaly - remainder;
+            if(remainder >= 0.5){
+
+                decimaly++;
+            }
+
+
+
+            double holds = 0;
+            if(xcheck){
+                holds = 0;
+                holds = decimal;
+                decimal = decimal - currposx;
+                if(decimal > 0){
+                    moveright(mmaxisconversion(decimal));
+                    currposx = holds;
+                }
+                else if(decimal < 0){
+                    moveleft(mmaxisconversion(abs(decimal)));
+                    currposx = currposx + holds;
+                }
+            }
+            if(ycheck){
+                holds = decimaly;
+                decimaly = decimaly - currposy;
+                if(decimaly > 0){
+                    movedown(mmaxisconversion(decimaly));
+                    currposy = holds;
+                }
+                else if(decimaly < 0){
+                    moveup(mmaxisconversion(abs(decimaly)));
+                    currposy = currposy + holds;
+                }
+            }
+            xcheck = 0;
+            ycheck = 0;
+        }
     }
+# 439 "newmain.c"
+    return;
 }
 
 void main(void)
@@ -10310,7 +10822,7 @@ void main(void)
   TRISB = 0x00;
   TRISE = 0x00;
   TRISD = 0x00;
-# 187 "newmain.c"
+# 459 "newmain.c"
   PORTC = 0x00;
   PORTE = 0x00;
   PORTB = 0x02;
@@ -10321,16 +10833,19 @@ void main(void)
 
 
   PORTD = 0x00;
-# 255 "newmain.c"
-  moveright(1700);
-  moveleft(1695);
-  movedown(1300);
-  moveup(1300);
-  servo(10);
-  servo(100);
+# 538 "newmain.c"
+  char gcode[] = "G90; G1 X16.139583 Y46.831250; G91; G1 Z3.000000 G90; G1 X15.875000 Y47.095833; G1 X16.139583 Y46.831250; G1 X78.845833 Y46.831250; G1 X79.110417 Y47.095833; G1 X78.845833 Y46.831250; G91; G1 Z2.000000 G90; G91; G1 Z2.000000 G90;";
+
+
+
+  int size = sizeof(gcode) / sizeof(char);
+  size = size - 1;
+
+  position(gcode,size);
+
   while(1) {
 
   }
-# 338 "newmain.c"
+# 624 "newmain.c"
   return;
 }
