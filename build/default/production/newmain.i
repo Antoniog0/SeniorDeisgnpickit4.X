@@ -7,7 +7,7 @@
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "newmain.c" 2
-# 11 "newmain.c"
+# 16 "newmain.c"
 # 1 "./pins_header.h" 1
 
 
@@ -10146,11 +10146,160 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\\pic\\include\\xc.h" 2 3
 # 45 "./pins_header.h" 2
-# 11 "newmain.c" 2
+# 16 "newmain.c" 2
 
 
 
 
+float posx = 0;
+float posy = 0;
+
+void servo(int pos){
+
+    for(int i = 0; i < 25; i++){
+        if(pos == 100){
+            PORTB |= 0x02;
+            _delay((unsigned long)((1.5)*(4000000/4000.0)));
+            PORTB &= ~0x02;
+            _delay((unsigned long)((18.5)*(4000000/4000.0)));
+        }
+        if(pos == 10){
+            PORTB |= 0x02;
+            _delay((unsigned long)((0.75)*(4000000/4000.0)));
+            PORTB &= ~0x02;
+            _delay((unsigned long)((19.25)*(4000000/4000.0)));
+        }
+    }
+    return;
+}
+
+void moveright(int steps){
+
+
+    PORTD = 0x00;
+    for(int i = 0; i < steps; i++){
+        PORTD |= 0x50;
+        _delay((unsigned long)((2)*(4000000/4000.0)));
+        PORTD &= ~0x50;
+        _delay((unsigned long)((1)*(4000000/4000.0)));
+    }
+    return;
+}
+
+void moveleft(int steps){
+    PORTD = 0xA0;
+    for(int i = 0; i < steps; i++){
+        PORTD |= 0x50;
+        _delay((unsigned long)((2)*(4000000/4000.0)));
+        PORTD &= ~0x50;
+        _delay((unsigned long)((1)*(4000000/4000.0)));
+    }
+    return;
+}
+
+void movedown(int steps){
+    PORTD = 0x20;
+    for(int i = 0; i < steps; i++){
+        PORTD |= 0x50;
+        _delay((unsigned long)((2)*(4000000/4000.0)));
+        PORTD &= ~0x50;
+        _delay((unsigned long)((1)*(4000000/4000.0)));
+    }
+    return;
+}
+
+void moveup(int steps){
+    PORTD = 0x80;
+    for(int i = 0; i < steps; i++){
+        PORTD |= 0x50;
+        _delay((unsigned long)((2)*(4000000/4000.0)));
+        PORTD &= ~0x50;
+        _delay((unsigned long)((1)*(4000000/4000.0)));
+    }
+    return;
+}
+
+void movetoPosition(float inpx, float inpy){
+    float holdx, holdy = 0;
+    holdx = inpx - posx;
+    holdy = inpy - posy;
+    if(holdx > 0){
+
+    }
+    if(holdy > 0){
+
+    }
+    return;
+}
+
+float x, y, z = 0;
+
+void position(char arrayinput[], int arraysize){
+    int i = 0;
+    float posholderx = 0;
+    float posholdery = 0;
+    int exp = 1;
+    float decimal = 0;
+    int check = 0;
+    while(i < arraysize){
+        if(arrayinput[i] == 'X'){
+            while(arrayinput[i] != ' '){
+                if(posholderx != 0 && check != 0){
+                    posholderx *= 10;
+                    posholderx += arrayinput[i];
+                }
+                else if(check){
+                    decimal = arrayinput[i] * 10^(-exp);
+                    posholderx += decimal;
+                    exp++;
+                }
+                else if(arrayinput[i] == '.'){
+                    check = 1;
+                }
+                else{
+                    posholderx += arrayinput[i];
+                }
+                i++;
+            }
+            exp = 0;
+            check = 0;
+        }
+        else if(arrayinput[i] == 'Y'){
+            while(arrayinput[i] != ' '){
+                if(posholdery != 0 && check != 0){
+                    posholdery *= 10;
+                    posholdery += arrayinput[i];
+                }
+                else if(check){
+                    decimal = arrayinput[i] * 10^(-exp);
+                    posholdery += decimal;
+                    exp++;
+                }
+                else if(arrayinput[i] == '.'){
+                    check = 1;
+                }
+                else{
+                    posholdery += arrayinput[i];
+                }
+                i++;
+            }
+            exp = 0;
+            check = 0;
+        }
+        else if(arrayinput[i] == 'Z'){
+            while(arrayinput[i] != ' '){
+                if(arrayinput[i] == '2'){
+                    servo(10);
+                }
+                else if(arrayinput[i] == '3'){
+                    servo(100);
+                }
+                i++;
+            }
+        }
+        i++;
+    }
+}
 
 void main(void)
 {
@@ -10158,56 +10307,30 @@ void main(void)
 
 
   TRISC = 0x00;
-
+  TRISB = 0x00;
   TRISE = 0x00;
   TRISD = 0x00;
-
-
-
+# 187 "newmain.c"
   PORTC = 0x00;
   PORTE = 0x00;
-
-
-  PORTD = 0x20;
-
-  while(1)
-  {
-      PORTD = 0x20;
-      for(int i = 0; i < 100;i++){
+  PORTB = 0x02;
 
 
 
 
 
-          PORTD |= 0x5F;
-          _delay((unsigned long)((4)*(4000000/4000.0)));
 
+  PORTD = 0x00;
+# 255 "newmain.c"
+  moveright(1700);
+  moveleft(1695);
+  movedown(1300);
+  moveup(1300);
+  servo(10);
+  servo(100);
+  while(1) {
 
-
-
-
-          PORTD &= ~0x5F;
-          _delay((unsigned long)((1)*(4000000/4000.0)));
-      }
-      PORTD = 0x80;
-
-      for(int i = 0; i < 100;i++){
-
-
-
-
-
-          PORTD |= 0x5F;
-          _delay((unsigned long)((4)*(4000000/4000.0)));
-
-
-
-
-
-          PORTD &= ~0x5F;
-          _delay((unsigned long)((1)*(4000000/4000.0)));
-      }
-# 107 "newmain.c"
   }
+# 338 "newmain.c"
   return;
 }
