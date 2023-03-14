@@ -2,18 +2,18 @@
 // 'C' source line config statements
 // CONFIG1L
 #pragma config WDTEN = OFF      // Watchdog Timer (Disabled - Controlled by SWDTEN bit)
-#pragma config PLLDIV = 2       // PLL Prescaler Selection bits (No prescale (4 MHz oscillator input drives PLL directly))
+#pragma config PLLDIV = 2       // PLL Prescaler Selection bits (Divide by 2 (8 MHz oscillator input))
 #pragma config STVREN = OFF     // Stack Overflow/Underflow Reset (Disabled)
 #pragma config XINST = OFF      // Extended Instruction Set (Disabled)
 
 // CONFIG1H
-#pragma config CPUDIV = OSC4_PLL6// CPU System Clock Postscaler (CPU system clock divide by 6)
+#pragma config CPUDIV = OSC2_PLL2// CPU System Clock Postscaler (CPU system clock divide by 2)
 #pragma config CP0 = ON         // Code Protect (Program memory is code-protected)
 
 // CONFIG2L
-#pragma config OSC = INTOSC     // Oscillator (INTOSC)
+#pragma config OSC = INTOSCPLL  // Oscillator (INTOSCPLL)
 #pragma config T1DIG = OFF      // T1OSCEN Enforcement (Secondary Oscillator clock source may not be selected)
-#pragma config LPT1OSC = OFF     // Low-Power Timer1 Oscillator (Low-power operation)
+#pragma config LPT1OSC = OFF    // Low-Power Timer1 Oscillator (High-power operation)
 #pragma config FCMEN = OFF      // Fail-Safe Clock Monitor (Disabled)
 #pragma config IESO = OFF       // Internal External Oscillator Switch Over Mode (Disabled)
 
