@@ -45,33 +45,33 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"80 C:\Users\fredn\MPLABXProjects\SeniorDeisgnpickit4.X\newmain.c
+"160 C:\Users\fredn\MPLABXProjects\SeniorDeisgnpickit4.X\newmain.c
 [v _mmaxisconversion mmaxisconversion `(d  1 e 4 0 ]
-"113
+"213
 [v _mmangledconversion mmangledconversion `(d  1 e 4 0 ]
-"130
+"230
 [v _servo servo `(v  1 e 1 0 ]
-"149
+"249
 [v _moveupright moveupright `(v  1 e 1 0 ]
-"160
+"260
 [v _movedownleft movedownleft `(v  1 e 1 0 ]
-"171
+"271
 [v _moveupleft moveupleft `(v  1 e 1 0 ]
-"182
+"282
 [v _movedownright movedownright `(v  1 e 1 0 ]
-"194
+"294
 [v _moveright moveright `(v  1 e 1 0 ]
-"207
+"307
 [v _moveleft moveleft `(v  1 e 1 0 ]
-"218
+"318
 [v _movedown movedown `(v  1 e 1 0 ]
-"229
+"329
 [v _moveup moveup `(v  1 e 1 0 ]
-"240
+"340
 [v _returntoorigin returntoorigin `(v  1 e 1 0 ]
-"285
+"385
 [v _position position `(v  1 e 1 0 ]
-"553
+"657
 [v _main main `(v  1 e 1 0 ]
 "6049 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-J_DFP/1.5.44/xc8\pic\include\proc\pic18f46j50.h
 [v _PORTB PORTB `VEuc  1 e 1 @3969 ]
@@ -91,127 +91,127 @@
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
 "3 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\errno.c
 [v _errno errno `i  1 e 2 0 ]
-"31 C:\Users\fredn\MPLABXProjects\SeniorDeisgnpickit4.X\newmain.c
-[v _gcode gcode `C[41954]uc  1 e 41954 0 ]
-"76
+"81 C:\Users\fredn\MPLABXProjects\SeniorDeisgnpickit4.X\newmain.c
+[v _gcode gcode `C[40557]uc  1 e 40557 0 ]
+"134
 [v _currposx currposx `d  1 e 4 0 ]
-"77
+"135
 [v _currposy currposy `d  1 e 4 0 ]
-"553
+"657
 [v _main main `(v  1 e 1 0 ]
 {
-"663
+"767
 [v main@size size `ui  1 a 2 67 ]
-"778
+"901
 } 0
-"240
+"340
 [v _returntoorigin returntoorigin `(v  1 e 1 0 ]
 {
-"247
+"347
 } 0
-"285
+"385
 [v _position position `(v  1 e 1 0 ]
 {
-"370
-[v position@p_131 p `i  1 a 2 17 ]
-"361
+"470
+[v position@p_136 p `i  1 a 2 17 ]
+"461
 [v position@p p `i  1 a 2 15 ]
-"402
+"502
 [v position@holds holds `d  1 a 4 45 ]
-"302
+"402
 [v position@o o `i  1 a 2 65 ]
-"295
+"395
 [v position@decimal decimal `d  1 a 4 61 ]
-"294
+"394
 [v position@decimaly decimaly `d  1 a 4 57 ]
-"293
+"393
 [v position@decimaleqy decimaleqy `d  1 a 4 53 ]
-"292
+"392
 [v position@decimaleq decimaleq `d  1 a 4 49 ]
-"291
+"391
 [v position@remainder remainder `d  1 a 4 41 ]
-"288
+"388
 [v position@posholdery posholdery `d  1 a 4 37 ]
-"287
+"387
 [v position@posholderx posholderx `d  1 a 4 33 ]
-"300
+"400
 [v position@j j `d  1 a 4 9 ]
-"290
+"390
 [v position@positive positive `d  1 a 4 5 ]
-"299
+"399
 [v position@zcheck zcheck `i  1 a 2 31 ]
-"298
+"398
 [v position@ycheck ycheck `i  1 a 2 29 ]
-"297
+"397
 [v position@xcheck xcheck `i  1 a 2 27 ]
-"296
+"396
 [v position@decimalcheck decimalcheck `i  1 a 2 25 ]
-"289
+"389
 [v position@exp exp `i  1 a 2 23 ]
-"301
+"401
 [v position@t t `i  1 a 2 13 ]
-"285
+"385
 [v position@arrayinput arrayinput `*.25uc  1 p 2 90 ]
 [v position@arraysize arraysize `ui  1 p 2 92 ]
-"545
+"649
 } 0
-"130
+"230
 [v _servo servo `(v  1 e 1 0 ]
 {
-"132
+"232
 [v servo@i i `i  1 a 2 3 ]
-"130
+"230
 [v servo@pos pos `i  1 p 2 0 ]
-"147
+"247
 } 0
-"229
+"329
 [v _moveup moveup `(v  1 e 1 0 ]
 {
-"231
+"331
 [v moveup@i i `i  1 a 2 70 ]
-"229
+"329
 [v moveup@steps steps `d  1 p 4 66 ]
-"238
+"338
 } 0
-"194
+"294
 [v _moveright moveright `(v  1 e 1 0 ]
 {
-"198
+"298
 [v moveright@i i `i  1 a 2 70 ]
-"194
+"294
 [v moveright@steps steps `d  1 p 4 66 ]
-"205
+"305
 } 0
-"207
+"307
 [v _moveleft moveleft `(v  1 e 1 0 ]
 {
-"209
+"309
 [v moveleft@i i `i  1 a 2 70 ]
-"207
+"307
 [v moveleft@steps steps `d  1 p 4 66 ]
-"216
+"316
 } 0
-"218
+"318
 [v _movedown movedown `(v  1 e 1 0 ]
 {
-"220
+"320
 [v movedown@i i `i  1 a 2 70 ]
-"218
+"318
 [v movedown@steps steps `d  1 p 4 66 ]
-"227
+"327
 } 0
-"80
+"160
 [v _mmaxisconversion mmaxisconversion `(d  1 e 4 0 ]
 {
-"83
+"163
 [v mmaxisconversion@remainder remainder `d  1 a 4 62 ]
-"81
+"161
 [v mmaxisconversion@p p `d  1 a 4 58 ]
-"82
+"162
 [v mmaxisconversion@out out `d  1 a 4 54 ]
-"80
+"160
 [v mmaxisconversion@inp inp `d  1 p 4 50 ]
-"95
+"195
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
@@ -259,10 +259,10 @@
 [v fmodf@uxi uxi `ul  1 a 4 86 ]
 "10
 [v fmodf@i i `ul  1 a 4 82 ]
-[u S583 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S588 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v fmodf@uy uy `S583  1 a 4 78 ]
-[v fmodf@ux ux `S583  1 a 4 72 ]
+[v fmodf@uy uy `S588  1 a 4 78 ]
+[v fmodf@ux ux `S588  1 a 4 72 ]
 "9
 [v fmodf@sx sx `ul  1 a 4 66 ]
 "7
@@ -273,39 +273,39 @@
 [v fmodf@x x `f  1 p 4 50 ]
 [v fmodf@y y `f  1 p 4 54 ]
 "5
-[v fmodf@F466 F466 `S583  1 s 4 F466 ]
+[v fmodf@F466 F466 `S588  1 s 4 F466 ]
 "6
-[v fmodf@F468 F468 `S583  1 s 4 F468 ]
+[v fmodf@F468 F468 `S588  1 s 4 F468 ]
 "65
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S583 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S588 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v ___fpclassifyf@u u `S583  1 a 4 10 ]
+[v ___fpclassifyf@u u `S588  1 a 4 10 ]
 "7
 [v ___fpclassifyf@e e `i  1 a 2 8 ]
 "4
 [v ___fpclassifyf@x x `f  1 p 4 0 ]
 "5
-[v ___fpclassifyf@F465 F465 `S583  1 s 4 F465 ]
+[v ___fpclassifyf@F465 F465 `S588  1 s 4 F465 ]
 "11
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S446 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S451 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S451 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S454 . 4 `l 1 i 4 0 `d 1 f 4 0 `S446 1 fAsBytes 4 0 `S451 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S454  1 a 4 19 ]
+[s S456 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S459 . 4 `l 1 i 4 0 `d 1 f 4 0 `S451 1 fAsBytes 4 0 `S456 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S459  1 a 4 19 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 13 ]
-[s S522 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S527 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S525 . 2 `s 1 i 2 0 `us 1 n 2 0 `S522 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S525  1 a 2 23 ]
+[u S530 . 2 `s 1 i 2 0 `us 1 n 2 0 `S527 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S530  1 a 2 23 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 18 ]
 "11
